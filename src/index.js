@@ -5,5 +5,21 @@ import { menuLoad } from "./menu"
 
 
 const content = document.querySelector("#content")
-content.appendChild(menuLoad.menuGrid)
+content.appendChild(start.homeDiv)
 
+const btnListeners = (function(){
+    const homeBtn = document.querySelector("#home")
+    const menuBtn = document.querySelector("#menu")
+    const contactBtn = document.querySelector("#contact")
+    
+    homeBtn.addEventListener("click",() =>{
+        content.innerHTML=""
+        content.appendChild(start.homeDiv)
+    })
+    menuBtn.addEventListener("click",() =>{
+        content.innerHTML=""
+        content.appendChild(menuLoad.menuGrid)
+    })
+    
+
+})()
