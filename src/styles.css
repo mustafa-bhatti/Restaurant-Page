@@ -67,6 +67,7 @@ header{
     box-shadow: 2px 5px 3px rgba(165, 42, 42, 0.37);
 }
 .menu-card h1{
+    text-transform: capitlize;
     font-weight: 400;
 }
 .card-img{
