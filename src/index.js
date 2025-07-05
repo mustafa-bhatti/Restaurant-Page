@@ -2,6 +2,7 @@ console.log("Running")
 import "./styles.css"
 import { start } from "./initial-load"
 import { menuLoad } from "./menu"
+import { contactLoad } from "./contact"
 
 
 const content = document.querySelector("#content")
@@ -20,6 +21,11 @@ const btnListeners = (function(){
         content.innerHTML=""
         content.appendChild(menuLoad.menuGrid)
     })
+    contactBtn.addEventListener("click",() =>{
+        content.innerHTML=""
+        content.appendChild(contactLoad.text)
+    })
+
     
 
 })()
