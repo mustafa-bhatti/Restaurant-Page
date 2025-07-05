@@ -1,9 +1,15 @@
-const homeDiv = document.createElement("div")
-const homeText = document.createElement("h1");
 
-homeDiv.className = "front-image";
-homeText.textContent= "LOUNGE\nCAFE";
+const start = (function(){
+    const homeDiv = document.createElement("div")
+    const homeText = document.createElement("h1");
 
-homeDiv.appendChild(homeText)
+    homeDiv.className = "front-image";
+    homeText.textContent= "LOUNGE\nCAFE";
 
-export {homeDiv}
+    homeDiv.appendChild(homeText)
+    return {
+        homeDiv
+    }
+})()
+
+export {start}
